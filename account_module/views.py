@@ -38,6 +38,7 @@ def login_user(request):
 
 
 def profile(request):
+    user = request.user
     return render(request, 'profile.html', context={
-
+        'user':user
     })

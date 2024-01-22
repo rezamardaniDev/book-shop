@@ -1,0 +1,10 @@
+{% if cart %}
+    {% for item in cart %}
+        {{ item.product.title }} -
+        {{ item.product.price }}
+    {% endfor %}
+<a href="{% url 'order:payment' %}" style="display: block">pay</a>
+    {% else %}
+    empty
+{% endif %} <br>
+<a href="{% url 'account:dashboard' %}">back to home</a>

@@ -1,1 +1,6 @@
-wellcome
+<div style="text-align: center">
+    <h2>Hello {{ user.username }}</h2>
+    <a href="{% url 'order:show_cart' %}">cart</a><br/>
+    <a href="{% url 'product:books' %}">book list</a> <br/>
+    <a href="{% url 'order:my_history' %}">history</a>
+</div>

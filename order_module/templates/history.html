@@ -1,0 +1,4 @@
+{% for item in orders %}
+    order-code: {{ item }} <br>
+{% endfor %} <br>
+<a href="{% url 'account:dashboard' %}">back to home</a>
