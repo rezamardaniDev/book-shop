@@ -1,0 +1,8 @@
+{% for item in books %}
+    <h2>{{ item.title }}</h2>
+    <p>discription: {{ item.description }}</p><br/>
+    <p>author: {{ item.author }}</p>
+    <p>publisher: {{ item.publisher }}</p>
+    <p>price: {{ item.price }}</p>
+    <a href="" style="border:2px    #808080 solid; padding:0.3rem; margin:1rem 0; display: block; width: fit-content">buy</a>
+{% endfor %}
